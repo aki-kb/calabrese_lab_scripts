@@ -1,2 +1,2 @@
 # calabrese_lab_scripts
-Shell scripts for processing genomics datasets
+Scripts for processing genomics datasets in the Calabrese Lab.
