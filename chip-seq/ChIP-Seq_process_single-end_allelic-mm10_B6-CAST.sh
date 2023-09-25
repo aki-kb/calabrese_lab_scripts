@@ -82,7 +82,7 @@ do
 	jid5=$(echo $jid5 | awk '{print $NF}')
 
 	## 5) Generate a wiggle file from the mm10 MAPQ>=30 reads for UCSC genome browser viewing
-	jid6=$(sbatch --dependency=afterok:$jid3 --time=36:00:00 --mem=2G -J ${file}.wiggle -o reports/${file}.%j.wiggle.out -e reports/${file}.%j.wiggle.err --wrap="perl ${assets}/bigsam_to_wig_mm10_wcigar4.pl sam_files/${file}_mm10_q30.sam ${assets}/mm10.chr.sizes wiggles/${file}_mm10 purple y n 50")
+	jid6=$(sbatch --dependency=afterok:$jid3 --time=96:00:00 --mem=2G -J ${file}.wiggle -o reports/${file}.%j.wiggle.out -e reports/${file}.%j.wiggle.err --wrap="perl ${assets}/bigsam_to_wig_mm10_wcigar4.pl sam_files/${file}_mm10_q30.sam ${assets}/mm10.chr.sizes wiggles/${file}_mm10 purple y n 50")
 	jid6=$(echo $jid6 | awk '{print $NF}')
 
 	## 6) Count the number of allelic reads within bins across the length of eachc chromosome for tiling density analysis: 10-kb bins/no slide
