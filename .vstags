@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+intersect	assets/ase_analyzer8_hDbed.pl	58;"	s
+intersect	assets/intersect_reads_snps18.pl	111;"	s
+parsedups	assets/intersect_reads_snps18.pl	330;"	s
+printer	assets/ase_analyzer8_hDbed.pl	135;"	s
+printer	assets/bigbowtie_to_wig3_mm10.pl	164;"	s
+printer	assets/bigsam_to_wig_mm10_wcigar4.pl	180;"	s
+readbow	assets/bigbowtie_to_wig3_mm10.pl	100;"	s
+readsam	assets/bigsam_to_wig_mm10_wcigar4.pl	109;"	s
+readsnps	assets/ase_analyzer8_hDbed.pl	31;"	s
+readsnps	assets/intersect_reads_snps18.pl	66;"	s
+splitsam	assets/bigsam_to_wig_mm10_wcigar4.pl	211;"	s
+splitsam	assets/intersect_reads_snps18.pl	447;"	s
+summary	assets/intersect_reads_snps18.pl	405;"	s

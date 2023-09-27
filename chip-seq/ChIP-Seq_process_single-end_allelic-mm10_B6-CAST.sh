@@ -78,7 +78,7 @@ do
 	jid4=$(echo $jid4 | awk '{print $NF}')
 
 	## 4) Parse mm10 and mm10-CAST MAPQ>=30 reads and extract only B6 and CAST SNP-overlapping reads (must overlap at least 1 SNP in the read)
-	jid5=$(sbatch --dependency=afterok:$jid3,$jid4 --time=72:00:00 --mem=10G -J ${file}.allelic -o reports/${file}.%j.allelic.out -e reports/${file}.%j.allelic.err --wrap="perl ${assets}/intersect_reads_snps18.pl sam_files/${file}_mm10_q30.sam sam_files/${file}_castmm10_q30.sam ${assets}/sanger_mm10_cast n allelic/${file}_mm10-allelic")
+	jid5=$(sbatch --dependency=afterok:$jid3,$jid4 --time=96:00:00 --mem=10G -J ${file}.allelic -o reports/${file}.%j.allelic.out -e reports/${file}.%j.allelic.err --wrap="perl ${assets}/intersect_reads_snps18.pl sam_files/${file}_mm10_q30.sam sam_files/${file}_castmm10_q30.sam ${assets}/sanger_mm10_cast n allelic/${file}_mm10-allelic")
 	jid5=$(echo $jid5 | awk '{print $NF}')
 
 	## 5) Generate a wiggle file from the mm10 MAPQ>=30 reads for UCSC genome browser viewing
