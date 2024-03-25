@@ -1,2 +1,2 @@
 # calabrese_lab_scripts
-Scripts for processing genomics datasets in the Calabrese Lab.
+Custom scripts for NGS data analysis in the Calabrese Lab.
